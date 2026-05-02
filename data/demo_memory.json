@@ -1,0 +1,14 @@
+[
+  {
+    "role": "user",
+    "content": "我正在学习大模型 Agent。"
+  },
+  {
+    "role": "assistant",
+    "content": "很好，你现在可以先理解 LLMClient、Memory 和 Tools。"
+  },
+  {
+    "role": "user",
+    "content": "Memory 是做什么的？"
+  }
+]

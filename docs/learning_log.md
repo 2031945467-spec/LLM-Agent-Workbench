@@ -17,10 +17,6 @@
 - 理解了 messages 是多轮对话的核心结构
 - 为后续 Memory、Tools、Agent、RAG 做了底层准备
 
-运行方式：
-
-```bash
-python days/day13_llm_client.py
 
 
 
@@ -38,7 +34,17 @@ python days/day13_llm_client.py
 - 学会隐藏 API Key，避免敏感信息泄露
 - 理解了统一配置入口对工程项目的重要性
 
-运行方式：
 
-```bash
-python days/day14_config_env.py
+## Day15: JSON 对话记忆
+
+今天完成了 JsonChatMemory，对话历史可以保存到本地 JSON 文件。
+
+核心收获：
+
+- 理解了大模型本身不会自动记住历史
+- 学会把 user / assistant 消息保存成 JSON
+- 学会从 JSON 文件加载历史消息
+- 学会把历史 messages 传给 LLMClient
+- 理解了 Memory 模块在 Agent 中的作用
+- 理解了为什么要限制传入模型的历史条数
+
