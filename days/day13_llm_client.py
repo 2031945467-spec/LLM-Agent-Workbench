@@ -36,7 +36,7 @@ class LLMClient:
         if self.provider=="ollama":
             return self._chat_with_ollama(messages)
         if self.provider=="openai":
-            return self._chat__with_openai(messages)
+            return self._chat_with_openai(messages)
         
         raise ValueError(f"Unsupported provider:{self.provider}")
     

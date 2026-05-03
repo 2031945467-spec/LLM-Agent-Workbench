@@ -48,3 +48,18 @@
 - 理解了 Memory 模块在 Agent 中的作用
 - 理解了为什么要限制传入模型的历史条数
 
+## Day16: SQLite 对话记忆
+
+今天完成了 SQLiteChatMemory，把对话历史从 JSON 文件升级为 SQLite 数据库。
+
+核心收获：
+
+- 理解了 JSON Memory 和 SQLite Memory 的区别
+- 学会使用 sqlite3 连接数据库
+- 学会创建 messages 数据表
+- 学会用 SQL 插入 user / assistant 消息
+- 学会查询最近 N 条历史消息
+- 理解了 session_id 对多会话记忆的作用
+- 理解了数据库记忆更适合真实 Agent 项目
+
+
