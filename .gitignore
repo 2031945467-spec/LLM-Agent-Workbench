@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project runtime data
+data/*.db
+data/*.json
+data/*.txt
