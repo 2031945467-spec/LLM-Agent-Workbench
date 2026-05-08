@@ -74,3 +74,16 @@
 - 理解了长期记忆和短期记忆的区别
 - 理解了 Agent 记忆模块中的上下文压缩思想
 
+## Day18: 项目模块化重构
+
+今天把前几天的学习脚本迁移到了 `src/` 正式项目目录中。
+
+核心收获：
+
+- 理解了 `days/` 和 `src/` 的区别
+- 学会把配置管理迁移到 `src/config/settings.py`
+- 学会把大模型调用迁移到 `src/llm/client.py`
+- 学会把 SQLite 记忆迁移到 `src/memory/sqlite_memory.py`
+- 学会把长期摘要记忆迁移到 `src/memory/summary_memory.py`
+- 理解了正式项目中模块之间的依赖关系
+- 学会使用 `python -m examples.day18_project_chat` 运行模块化项目
