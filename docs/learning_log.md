@@ -87,3 +87,18 @@
 - 学会把长期摘要记忆迁移到 `src/memory/summary_memory.py`
 - 理解了正式项目中模块之间的依赖关系
 - 学会使用 `python -m examples.day18_project_chat` 运行模块化项目
+
+
+## Day19: FastAPI 聊天接口
+
+今天把命令行聊天升级成了 FastAPI 后端接口。
+
+核心收获：
+
+- 学会使用 FastAPI 定义 HTTP 接口
+- 学会用 Pydantic 定义请求体和响应体
+- 学会把 LLMClient、SQLiteChatMemory、SummaryMemory 组合进 API
+- 理解了 `/chat` 接口的完整流程
+- 理解了 session_id 对多会话记忆隔离的作用
+- 理解了从命令行程序到后端服务的项目升级方式
+
