@@ -124,13 +124,13 @@ def get_history(session_id:str,limit:int=20)->HistoryResponse:
     finally:
         memory.close()
         
-@app.get("sessions/{session_id}/summary",response_model=SummaryResponse)
+@app.get("/sessions/{session_id}/summary",response_model=SummaryResponse)
 def get_summary(session_id:str)->SummaryResponse:
     session_id=normalize_session_id(session_id)
     summary_memory=create_summary_memory(session_id)
-    return SummaryResponse(session_id,summary_memory)
+    return SummaryResponse(session_id=session_id,summary=summary_memory.get_summary())
 
-@app.post("sessions/{session_id}/clear",response_model=ClearResponse)
+@app.post("/sessions/{session_id}/clear",response_model=ClearResponse)
 def clear_session(session_id:str)->ClearResponse:
     session_id=normalize_session_id(session_id)
     memory=create_memory(session_id)
