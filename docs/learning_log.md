@@ -116,3 +116,14 @@
 - 理解了项目从学习脚本走向工程项目的过程
 - 修复了 FastAPI 路由路径和 Pydantic 响应模型参数传递问题
 
+## Day21: Calculator Tool
+
+今天开始进入工具调用阶段，实现了第一个工具 `CalculatorTool`。
+
+核心收获：
+
+- 理解了 Tool 是 Agent 可调用的能力模块
+- 学会用 `ToolResult` 统一表示工具执行结果
+- 学会把计算器能力封装成 `CalculatorTool`
+- 理解了为什么不能直接对用户输入使用 `eval()`
+- 初步理解了 Agent 后续如何调用工具完成任务
