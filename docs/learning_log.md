@@ -140,3 +140,16 @@
 - 学会限制可读取的文件类型和文件大小
 - 理解了工具安全对 Agent 系统的重要性
 - 为后续文档总结、RAG 和 Agent 工具调用做准备
+
+## Day23: Todo Tool
+
+今天实现了第三个工具 `TodoTool`，用于管理任务列表。
+
+核心收获：
+
+- 理解了任务管理也可以封装成 Agent Tool
+- 学会使用 JSON 文件保存工具状态
+- 学会设计 add / list / done / delete / clear 等工具命令
+- 继续强化了 `ToolResult` 统一返回格式
+- 理解了工具需要有统一入口 `run()`
+- 为后续 Tool Router 和 Agent 工具调用做准备
