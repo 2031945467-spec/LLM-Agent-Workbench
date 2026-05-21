@@ -153,3 +153,15 @@
 - 继续强化了 `ToolResult` 统一返回格式
 - 理解了工具需要有统一入口 `run()`
 - 为后续 Tool Router 和 Agent 工具调用做准备
+
+## Day24: Tool Registry
+
+今天实现了 `ToolRegistry`，用于统一注册和调用多个工具。
+
+核心收获：
+
+- 理解了为什么需要工具注册表
+- 学会把 CalculatorTool、FileReaderTool、TodoTool 统一管理
+- 学会通过工具名称调用工具
+- 理解了工具统一接口 `run()` 的意义
+- 理解了 ToolRegistry 是后续 Agent 调用工具的基础
