@@ -165,3 +165,15 @@
 - 学会通过工具名称调用工具
 - 理解了工具统一接口 `run()` 的意义
 - 理解了 ToolRegistry 是后续 Agent 调用工具的基础
+
+## Day25: Tool Router
+
+今天实现了 `ToolRouter`，可以根据用户自然语言判断是否需要调用工具。
+
+核心收获：
+
+- 理解了 ToolRegistry 和 ToolRouter 的区别
+- 学会把自然语言映射成 tool_name + tool_input
+- 学会用规则和正则表达式做简单工具路由
+- 理解了 Agent 调用工具前需要先完成意图判断
+- 为后续 Agent 基础版做准备
