@@ -177,3 +177,16 @@
 - 学会用规则和正则表达式做简单工具路由
 - 理解了 Agent 调用工具前需要先完成意图判断
 - 为后续 Agent 基础版做准备
+
+## Day26: Basic Agent
+
+今天实现了基础版 Agent，把 LLMClient、Memory、ToolRouter 和 ToolRegistry 串联起来。
+
+核心收获：
+
+- 理解了 Agent 不只是聊天，而是会判断是否需要调用工具
+- 学会把自然语言输入交给 ToolRouter 做工具路由
+- 学会用 ToolRegistry 调用具体工具
+- 学会把工具返回结果交给 LLM 整理成自然语言回答
+- 学会把 Agent 对话保存到 SQLiteChatMemory
+- 理解了 BasicAgent 是后续 ReAct Agent 的基础
