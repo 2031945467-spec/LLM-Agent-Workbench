@@ -190,3 +190,16 @@
 - 学会把工具返回结果交给 LLM 整理成自然语言回答
 - 学会把 Agent 对话保存到 SQLiteChatMemory
 - 理解了 BasicAgent 是后续 ReAct Agent 的基础
+
+## Day27: ReAct Agent
+
+今天实现了基础版 ReAct Agent，引入 Thought / Action / Observation / Final Answer 的执行结构。
+
+核心收获：
+
+- 理解了 ReAct = Reasoning + Acting
+- 学会用 ReActStep 记录 Agent 的中间执行过程
+- 学会把工具调用过程拆成 Thought、Action、Action Input、Observation
+- 理解了 ReAct Trace 对调试和面试展示的重要性
+- 理解了当前版本仍然是规则 Router + ReAct 结构，而不是完全自主推理 Agent
+
