@@ -215,3 +215,14 @@
 - 学会查看最近几条 Agent 执行记录
 - 理解了 Agent 不仅要能运行，还要能被观察、调试和复盘
 
+## Day29: Multi-Step Agent
+
+今天实现了基础版 Multi-Step Agent，让 Agent 能处理“读取文件并总结”这类多步任务。
+
+核心收获：
+
+- 理解了单步 Agent 和多步 Agent 的区别
+- 学会把一个用户请求拆成多个执行步骤
+- 学会执行“Tool Step + LLM Step”的组合流程
+- 理解了多步任务是 Planner / Executor 的基础
+- 理解了当前版本仍然是规则式多步任务，不是完全自主规划
