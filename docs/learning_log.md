@@ -203,3 +203,15 @@
 - 理解了 ReAct Trace 对调试和面试展示的重要性
 - 理解了当前版本仍然是规则 Router + ReAct 结构，而不是完全自主推理 Agent
 
+## Day28: Agent Trace Logger
+
+今天实现了 Agent Trace 日志记录器，用于保存每次 Agent 的执行过程。
+
+核心收获：
+
+- 理解了 Trace 对 Agent 调试的重要性
+- 学会把 ReAct 的 Thought / Action / Observation 保存成日志
+- 学会使用 JSONL 保存连续执行记录
+- 学会查看最近几条 Agent 执行记录
+- 理解了 Agent 不仅要能运行，还要能被观察、调试和复盘
+
