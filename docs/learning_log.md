@@ -226,3 +226,15 @@
 - 学会执行“Tool Step + LLM Step”的组合流程
 - 理解了多步任务是 Planner / Executor 的基础
 - 理解了当前版本仍然是规则式多步任务，不是完全自主规划
+
+## Day30: Agent 阶段总结
+
+今天没有新增复杂功能，而是对 Day13-Day29 的 Agent 阶段做了整理和自检。
+
+核心收获：
+
+- 梳理了 Config、LLMClient、Memory、Tools、ToolRegistry、ToolRouter、Agent 之间的关系
+- 编写了 Agent 阶段总结文档
+- 编写了 Agent smoke test，用于测试当前核心能力
+- 重新审视了当前项目的漏洞：Planner / Executor 缺位、Router 规则化、多步任务泛化不足
+- 明确了后续路线：先补 Planner / Executor，再进入 RAG
