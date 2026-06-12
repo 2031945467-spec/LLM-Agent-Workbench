@@ -238,3 +238,15 @@
 - 编写了 Agent smoke test，用于测试当前核心能力
 - 重新审视了当前项目的漏洞：Planner / Executor 缺位、Router 规则化、多步任务泛化不足
 - 明确了后续路线：先补 Planner / Executor，再进入 RAG
+
+## Day31: Planner 入门
+
+今天实现了基础版 Planner，用于把用户自然语言请求拆成结构化执行计划。
+
+核心收获：
+
+- 理解了 Planner 只负责规划，不负责执行
+- 理解了多步任务不能靠无限 if / elif 手写
+- 学会用 LLM 根据用户请求和工具列表生成 JSON 计划
+- 学会定义 PlanStep 和 Plan 数据结构
+- 学会对 LLM 输出做 JSON 提取、步骤校验和失败兜底
