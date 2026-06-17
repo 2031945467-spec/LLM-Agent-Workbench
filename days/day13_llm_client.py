@@ -8,7 +8,7 @@ Message =Dict[str,str]
 @dataclass
 class LLMConfig:
     provider:str="ollama"
-    ollama_model:str="qwen2:0.5b"
+    ollama_model:str="qwen3.5:4b"
     openai_model:str="gpt-4o-mini"
     openai_api_key:Optional[str]=None
     openai_base_url:Optional[str]=None
@@ -108,7 +108,7 @@ def load_config()->LLMConfig:
     load_dotenv()
     return LLMConfig(
         provider=os.getenv("LLM_PROVIDER","ollama"),
-        ollama_model=os.getenv("OLLAMA_MODEL","qwen2:0.5b"),
+        ollama_model=os.getenv("OLLAMA_MODEL","qwen3.5:4b"),
         openai_model=os.getenv("OPENAI_MODEL","gpt-4o-mini"),
         openai_api_key=os.getenv("OPENAI_API_KEY"),
         openai_base_url=os.getenv("OPENAI_BASE_URL"),

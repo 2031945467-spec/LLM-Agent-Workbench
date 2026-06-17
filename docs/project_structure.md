@@ -36,7 +36,7 @@ pip install -r requirements.txt
 复制 .env.example 为 .env，并修改配置：
 
 LLM_PROVIDER=ollama
-OLLAMA_MODEL=qwen2:0.5b
+OLLAMA_MODEL=qwen3.5:4b
 
 OPENAI_API_KEY=
 OPENAI_BASE_URL=

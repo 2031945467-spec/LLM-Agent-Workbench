@@ -8,7 +8,7 @@ class AppConfig:
     app_env:str="dev"
     debug:bool=True
     llm_provider:str="ollama"
-    ollama_model:str="qwen2:0.5b"
+    ollama_model:str="qwen3.5:4b"
     openai_model:str="gpt-4o-mini"
     openai_api_key:Optional[str]=None
     openai_base_url:Optional[str]=None
@@ -64,7 +64,7 @@ def load_app_config()->AppConfig:
         app_env=os.getenv("APP_ENV", "dev"),
         debug=str_to_bool(os.getenv("DEBUG"), default=True),
         llm_provider=os.getenv("LLM_PROVIDER", "ollama").lower().strip(),
-        ollama_model=os.getenv("OLLAMA_MODEL", "qwen2:0.5b"),
+        ollama_model=os.getenv("OLLAMA_MODEL", "qwen3.5:4b"),
         openai_model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
         openai_api_key=os.getenv("OPENAI_API_KEY") or None,
         openai_base_url=os.getenv("OPENAI_BASE_URL") or None,
