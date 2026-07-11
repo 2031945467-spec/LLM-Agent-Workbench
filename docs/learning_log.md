@@ -250,3 +250,17 @@
 - 学会用 LLM 根据用户请求和工具列表生成 JSON 计划
 - 学会定义 PlanStep 和 Plan 数据结构
 - 学会对 LLM 输出做 JSON 提取、步骤校验和失败兜底
+
+## Day32: Executor 执行器
+
+今天实现了基础版 Executor，用于执行 Planner 生成的结构化计划。
+
+核心收获：
+
+- 理解了 Planner 和 Executor 的职责区别
+- 学会执行 tool step 和 llm step
+- 学会用 step_outputs 保存每一步结果
+- 学会用 depends_on 找到前置步骤输出
+- 学会在工具步骤依赖前置结果时，让 LLM 生成具体工具输入
+- 理解了当前 Executor 还不能完美处理一个步骤拆成多个工具调用的问题
+
