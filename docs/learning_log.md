@@ -276,3 +276,16 @@
 - Memory 负责保存最终对话
 - 跑通了“用户输入 → 规划 → 执行 → 回答”的完整链路
 - 理解了当前版本暂不包含自动重试和重新规划
+
+## Day34: Document Loader 和 Text Splitter
+
+今天正式进入 RAG 阶段，实现了文档加载和文本切块功能。
+
+核心收获：
+
+- 理解了 Document Loader 的作用
+- 学会把不同文件统一转换成 Document 对象
+- 学会加载单个文件和整个目录
+- 理解了为什么长文档需要切块
+- 理解了 chunk_size 和 chunk_overlap
+- 实现了 Document → TextChunk 的基础处理流程
