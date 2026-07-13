@@ -264,3 +264,15 @@
 - 学会在工具步骤依赖前置结果时，让 LLM 生成具体工具输入
 - 理解了当前 Executor 还不能完美处理一个步骤拆成多个工具调用的问题
 
+## Day33: PlanningAgent 整合
+
+今天将 Planner、Executor 和 SQLiteChatMemory 整合成了完整的 PlanningAgent。
+
+核心收获：
+
+- 理解了 PlanningAgent 是协调层
+- Planner 负责生成计划
+- Executor 负责执行计划
+- Memory 负责保存最终对话
+- 跑通了“用户输入 → 规划 → 执行 → 回答”的完整链路
+- 理解了当前版本暂不包含自动重试和重新规划
