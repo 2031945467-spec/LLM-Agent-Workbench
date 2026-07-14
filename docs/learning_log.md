@@ -289,3 +289,17 @@
 - 理解了为什么长文档需要切块
 - 理解了 chunk_size 和 chunk_overlap
 - 实现了 Document → TextChunk 的基础处理流程
+
+## Day35: Embedding 和 FAISS
+
+今天实现了文本向量化和基础 FAISS 向量检索。
+
+核心收获：
+
+- 理解了 Embedding 是文本的向量表示
+- 学会使用 Sentence Transformer 生成文本向量
+- 理解了向量数量和向量维度
+- 学会使用 FAISS IndexFlatIP 建立索引
+- 理解了归一化向量与余弦相似度的关系
+- 学会把 FAISS 返回的位置映射回原始 TextChunk
+- 跑通了“文档切块 → 向量化 → 相似文本搜索”流程

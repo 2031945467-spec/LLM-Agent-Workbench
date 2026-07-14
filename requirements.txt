@@ -5,3 +5,5 @@ uvicorn
 pydantic
 ollama
 openai
+sentence-transformers
+faiss-cpu
