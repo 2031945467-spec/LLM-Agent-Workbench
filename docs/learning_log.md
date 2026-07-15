@@ -303,3 +303,17 @@
 - 理解了归一化向量与余弦相似度的关系
 - 学会把 FAISS 返回的位置映射回原始 TextChunk
 - 跑通了“文档切块 → 向量化 → 相似文本搜索”流程
+
+## Day36: Retriever 和基础 RAG
+
+今天实现了 Retriever 和基础 RAG 问答流程。
+
+核心收获：
+
+- 理解了 Retriever 只负责检索，不负责生成回答
+- 学会把用户问题转换为查询向量
+- 学会从 FAISS 中获取 TopK 相关文本块
+- 学会把检索结果拼接成上下文
+- 学会让 LLM 基于参考资料回答问题
+- 理解了直接问答和 RAG 问答的区别
+- 跑通了 Query → Retrieve → Context → Generate 的完整流程
